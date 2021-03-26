@@ -37,7 +37,7 @@ getToken(){
 loggedIn(){
     return !!localStorage.getItem("token")
   }
-// authLogin(){
-//   return this.http.get('https://localhost:44316/api/user/get')
-// }
+authLogin(){
+  return this.http.get('https://localhost:44316/api/user/get')
+}
 }

@@ -38,7 +38,8 @@ public user:User={
 userData(){
   this.service.loginUser(this.user).subscribe((data:any) =>{
      console.log(data),
-  localStorage.setItem("token",data.token)})
-  // this.router.navigateByUrl('/authuser')
+  localStorage.setItem("token",data.token)
+  this.router.navigate(['/authuser'])
+  })
     }
 }
